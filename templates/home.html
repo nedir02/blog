@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Anasayfa - {{ block.super }}{% endblock %}
+
+{%  block body %}
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 30px">
+            <div class="col-md-3 col-sm-6" style="background-color: red; height: 100px">1 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #184fdc; height: 100px">2 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #4db76a; height: 100px">3 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #eaad10; height: 100px">4 urun</div>
+
+        </div>
+      <div class="row" style="margin-bottom: 30px">
+            <div class="col-md-3 col-sm-6" style="background-color: red; height: 100px">1 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #184fdc; height: 100px">2 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #4db76a; height: 100px">3 urun</div>
+            <div class="col-md-3 col-sm-6" style="background-color: #eaad10; height: 100px">4 urun</div>
+
+        </div>
+
+    Welcome {{ request.user.get_full_name }}
+    </div>
+
+{% endblock %}
+
